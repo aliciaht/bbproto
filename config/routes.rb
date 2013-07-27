@@ -1,7 +1,18 @@
 Bbproto::Application.routes.draw do
+  resources :pages
+
+
   resources :relations
 
 root :to => 'relations#index'
+
+
+
+
+
+
+
+match '/:id' => 'pages#show'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

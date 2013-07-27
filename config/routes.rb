@@ -9,10 +9,9 @@ root :to => 'relations#index'
 
 
 
-
-
-
-match '/:id' => 'pages#show'
+match '/home' => 'pages#home'
+match '/about' => 'pages#about'
+match '/contact' => 'pages#contact'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
